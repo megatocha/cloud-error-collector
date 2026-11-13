@@ -1,0 +1,12 @@
+[plugin]
+id = "local.cloud-error-collector"
+name = "Cloud Error Collector"
+version = "0.2.1"
+author = "megatocha"
+description = "Groups Steam Cloud sync failure notifications."
+
+[frontend]
+entry = "src/index.ts"
+
+[compiler]
+output_path = "./cloud-error-collector.star"

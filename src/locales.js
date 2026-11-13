@@ -1,0 +1,38 @@
+export const titles = {
+  arabic: 'أخطاء Steam Cloud: {n}',
+  brazilian: 'Erros do Steam Cloud: {n}',
+  bulgarian: 'Грешки в Steam Cloud: {n}',
+  czech: 'Chyby služby Steam Cloud: {n}',
+  danish: 'Steam Cloud-fejl: {n}',
+  dutch: 'Steam Cloud-fouten: {n}',
+  english: 'Steam Cloud errors: {n}',
+  finnish: 'Steam Cloud -virheet: {n}',
+  french: 'Erreurs Steam Cloud : {n}',
+  german: 'Steam-Cloud-Fehler: {n}',
+  greek: 'Σφάλματα Steam Cloud: {n}',
+  hungarian: 'Steam Cloud hibák: {n}',
+  indonesian: 'Kesalahan Steam Cloud: {n}',
+  italian: 'Errori di Steam Cloud: {n}',
+  japanese: 'Steam Cloud エラー: {n}',
+  koreana: 'Steam Cloud 오류: {n}',
+  latam: 'Errores de Steam Cloud: {n}',
+  malay: 'Ralat Steam Cloud: {n}',
+  norwegian: 'Steam Cloud-feil: {n}',
+  polish: 'Błędy Steam Cloud: {n}',
+  portuguese: 'Erros do Steam Cloud: {n}',
+  romanian: 'Erori Steam Cloud: {n}',
+  russian: 'Ошибки Steam Cloud: {n}',
+  schinese: 'Steam 云错误：{n}',
+  sc_schinese: 'Steam 云错误：{n}',
+  spanish: 'Errores de Steam Cloud: {n}',
+  swedish: 'Steam Cloud-fel: {n}',
+  tchinese: 'Steam 雲端錯誤：{n}',
+  thai: 'ข้อผิดพลาด Steam Cloud: {n}',
+  turkish: 'Steam Cloud hataları: {n}',
+  ukrainian: 'Помилки Steam Cloud: {n}',
+  vietnamese: 'Lỗi Steam Cloud: {n}',
+};
+
+export function titleFor(language, count) {
+  return (titles[language] ?? titles.english).replace('{n}', String(count));
+}
